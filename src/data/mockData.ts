@@ -61,5 +61,5 @@ export const restaurantInfo = {
   name: 'Sabores Únicos',
   phone: '+1234567890',
   address: 'Calle Principal 123, Ciudad',
-  whatsappNumber: '1234567890'
+  whatsappNumber: '+5493405500324'
 };
