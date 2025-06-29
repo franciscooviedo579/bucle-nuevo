@@ -16,18 +16,18 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-md border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-black shadow-md border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2 text-orange-600 hover:text-orange-700 transition-colors">
             <UtensilsCrossed className="h-8 w-8" />
-            <span className="text-xl font-bold">Sabores Únicos</span>
+            <span className="text-xl font-bold">Bucle</span>
           </Link>
           
           <nav className="flex items-center space-x-6">
             <Link 
               to="/" 
-              className="text-gray-700 hover:text-orange-600 transition-colors font-medium"
+              className="text-white hover:text-orange-600 transition-colors font-medium"
             >
               Menú
             </Link>
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
               <div className="flex items-center space-x-4">
                 <Link 
                   to="/admin" 
-                  className="text-gray-700 hover:text-orange-600 transition-colors font-medium flex items-center space-x-1"
+                  className="text-white hover:text-orange-600 transition-colors font-medium flex items-center space-x-1"
                 >
                   <Settings className="h-4 w-4" />
                   <span className="hidden sm:inline">Admin</span>
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                 
                 <button
                   onClick={handleLogout}
-                  className="text-gray-700 hover:text-red-600 transition-colors flex items-center space-x-1"
+                  className="text-white hover:text-red-600 transition-colors flex items-center space-x-1"
                   title="Cerrar sesión"
                 >
                   <LogOut className="h-4 w-4" />
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
             ) : (
               <Link 
                 to="/login" 
-                className="text-gray-700 hover:text-orange-600 transition-colors font-medium flex items-center space-x-1"
+                className="text-white hover:text-orange-600 transition-colors font-medium flex items-center space-x-1"
               >
                 <Settings className="h-4 w-4" />
                 <span className="hidden sm:inline">Admin</span>
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
             
             <Link 
               to="/cart" 
-              className="relative text-gray-700 hover:text-orange-600 transition-colors flex items-center space-x-1"
+              className="relative text-white hover:text-orange-600 transition-colors flex items-center space-x-1"
             >
               <ShoppingCart className="h-6 w-6" />
               {itemCount > 0 && (
